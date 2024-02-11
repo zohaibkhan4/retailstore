@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "2f94699b-f71a-4e7e-8b9d-bd4e76e75e18",
+		"name": "RetailStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26859876"
+	},
+	"item": [
+		{
+			"name": "Test Server",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refCdGrp/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/refCdGrp/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"refCdGrp",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refCdVal/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/refCdVal/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"refCdVal",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/store/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/store/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"store",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/place",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\": 1,\r\n    \"customerDetail\":{\r\n        \"customerId\":\"1\",\r\n        \"customerType\":\"Employee\",\r\n        \"firstName\":\"Zohaib\",\r\n        \"lastName\":\"Asim\",\r\n        \"modileNo\":\"601171258272\",\r\n        \"phoneNo\":\"601171258272\",\r\n        \"email\":\"dumy@dumy.com\",\r\n        \"address\":\"21-03\"\r\n    },\r\n    \"productsList\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/order/place",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"place"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
