@@ -2,4 +2,5 @@
 2. Deploy war
 3. Import JSON /resources/scripts/RetailStore.postman_collection.json
 4. Test
+5. Database Diagram /resources/
    
